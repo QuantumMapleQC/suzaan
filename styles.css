@@ -1,0 +1,152 @@
+/* General Reset and Basic Styling */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    color: #000;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* Top Bar Styling */
+.top-bar {
+    display: flex;
+    height: 30px;
+    padding: 10px 20px;
+    color: white;
+    background-color: #000000;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+}
+
+.top-bar nav {
+    gap: 20px;
+    display: flex;
+}
+
+.top-bar nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.top-bar nav a:hover {
+    text-decoration: underline;
+}
+
+/* Box Styling */
+.box {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 200px;
+    padding: 15px;
+    background: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.box h3 {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+    color: #000;
+}
+
+.box a {
+    display: block;
+    text-decoration: none;
+    color: #0073e6;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.box a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Styling */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #1e70c1;
+    color: white;
+}
+
+/* Search Bar and Results Styling */
+.search-container {
+    position: relative;
+    max-width: 400px;
+    margin: 10px auto;
+}
+
+#searchBar {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    max-height: 200px;
+    overflow-y: auto;
+    display: none;
+    z-index: 10;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.search-results div {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.search-results div:hover {
+    background-color: #f0f0f0;
+}
+
+.search-results div.highlight {
+    background-color: #ffd700; /* Highlight in yellow */
+}
+
+/* Chapter and Line Display Styling */
+#chapterInfo {
+    margin-top: 20px;
+    color: #333;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
