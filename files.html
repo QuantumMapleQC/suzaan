@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Files - Kaipedia</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="zenny.main_full_body_t-posing_Grey_hair_orange_eyes_wolf_anthro_928225bc-0efd-4b02-a197-c004b7715ff7.png" type="image/x-icon">
+
+    <meta property="og:title" content="Kaipedia">
+    <meta property="og:description" content="Files">
+    <meta property="og:image" content="zenny.main_full_body_t-posing_Grey_hair_orange_eyes_wolf_anthro_928225bc-0efd-4b02-a197-c004b7715ff7">
+    <meta property="og:type" content="website">
+    
+</head>
+<body>
+
+<div class="wrapper">
+    <nav class="sidebar">
+        <h3>Kaipedia</h3>
+        <ul>
+            <li><a href="index.html">Main Page</a></li>
+            <li><a href="suzaan-gallery.html">Gallery</a></li>
+            <li><a href="files.html">Files</a></li>
+            <li><a href="Developers-info.html">Developers</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <header>
+            <h1>Files</h1>
+        </header>
+        <button id="darkModeToggle" onclick="toggleDarkMode()">🌙</button>
+    </header>
+
+        <section>
+            <h2>Available Files</h2>
+            <ul>
+                <li><a href="2571005b676281228dfbb1d9436ad6ba10bba4111efef206488342dca03ff52f.png">2571005b676281228dfbb1d9436ad6ba10bba4111efef206488342dca03ff52f.png</a></li>
+                <li><a href="artworks-mdzxXeeaxdeywBs3-TOzSzQ-t500x500.png">artworks-mdzxXeeaxdeywBs3-TOzSzQ-t500x500.png</a></li>
+                <li><a href="concept_art_scenery.png">concept_art_scenery.png</a></li>
+                <li><a href="Developers-info.html">Developers-info.html</a></li>
+                <li><a href="Encounter_scene_2-_chapter_5.png">Encounter_scene_2-_chapter_5.png</a></li>
+                <li><a href="etherbane_None_a8d51bfb-7881-4efe-86e2-0f860b703fb4.png">etherbane_None_a8d51bfb-7881-4efe-86e2-0f860b703fb4.png</a></li>
+                <li><a href="files.html">files.html</a></li>
+                <li><a href="image.png">image.png</a></li>
+                <li><a href="index.html">index.html</a></li>
+                <li><a href="kai_scene_28-chapter_5.png">kai_scene_28-chapter_5.png</a></li>
+                <li><a href="styles.css">styles.css</a></li>
+                <li><a href="suzaan-gallery.html">suzaan-gallery.html</a></li>
+                <li><a href="user_mapel.png">user_mapel.png</a></li>
+                <li><a href="Zenlin.png">Zenlin.png</a></li>
+                <li><a href="zenny.main_full_body_t-posing_Grey_hair_orange_eyes_wolf_anthro_928225bc-0efd-4b02-a197-c004b7715ff7.png">zenny.main_full_body_t-posing_Grey_hair_orange_eyes_wolf_anthro_928225bc-0efd-4b02-a197-c004b7715ff7.png</a></li>
+                <li><a href="zenphix_extremely_detailed_textures_drawn_in_the_style_of_tsuto_76c3e5d0-b426-46ea-8815-d6d10c6a6d5b.png">zenphix_extremely_detailed_textures_drawn_in_the_style_of_tsuto_76c3e5d0-b426-46ea-8815-d6d10c6a6d5b.png</a></li>
+            </ul>
+            
+        </section>
+        
+        <!-- Add any other content here if needed -->
+        <section>
+            <h2>Additional Information</h2>
+            <p>This section will be updated with more files and resources over time.</p>
+            <p>The files listed here are part of an ongoing archive for Kaipedia and contain important media related to the lore, development, and universe of Kai Suzaan.</p>
+            <p>New files will be uploaded as they become available. Be sure to check back frequently for updates.</p>
+        </section>
+
+        <section>
+            <h2>File Usage</h2>
+            <p>Some of the files provided on this page are for personal use only. They may not be redistributed or used for commercial purposes without permission from the developers.</p>
+            <p>If you are looking to use any files for your own project or want to ask about their usage rights, feel free to reach out to the development team.</p>
+        </section>
+    </div>
+</div>
+<script>
+    // Toggle Dark Mode
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark-mode");
+      document.querySelector(".sidebar").classList.toggle("dark-mode");
+      document.querySelector(".toc").classList.toggle("dark-mode");
+
+      // Save user preference in localStorage
+      const isDarkMode = document.body.classList.contains("dark-mode");
+      localStorage.setItem("darkMode", isDarkMode);
+      
+      // Change the button text based on the mode
+      const button = document.getElementById("darkModeToggle");
+      button.innerText = isDarkMode ? "☀️" : "🌙";  // Switch between moon and sun icons
+    }
+
+    // Load Dark Mode from localStorage
+    window.onload = function () {
+      if (localStorage.getItem("darkMode") === "true") {
+        document.body.classList.add("dark-mode");
+        document.querySelector(".sidebar").classList.add("dark-mode");
+        document.querySelector(".toc").classList.add("dark-mode");
+        
+        // Change the button text to sun when dark mode is active
+        document.getElementById("darkModeToggle").innerText = "☀️";
+      }
+    };
+</script>
+</body>
+</html>
